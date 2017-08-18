@@ -1,0 +1,8 @@
+#element {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}
