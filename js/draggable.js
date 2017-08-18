@@ -1,7 +1,7 @@
 window.addEventListener("load", init, false);
 
 function init() {
-    var elem = document.getElementById("element");
+    var elem = document.getElementById("ball");
     elem.addEventListener("mousedown", function (e) {
         drag(this, e)
     });
@@ -31,7 +31,7 @@ function drag(elementToDrag, event) {
     function upHandler(e) {
         if (!e) e = window.event;
 
-        document.removeEventListener("mouseup", upHandler, true);
         document.removeEventListener("mousemove", moveHandler, true);
+        document.removeEventListener("mouseup", upHandler, true);
     }
 }
